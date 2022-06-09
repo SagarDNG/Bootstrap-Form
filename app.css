@@ -1,0 +1,5 @@
+#formData {
+    display: none;
+}
+
+/* we can't apply "d-none" directly in html page, coz it overwrites the "d-block", which is in app.js*/

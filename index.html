@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap forms</title>
+    <link rel="stylesheet" href="app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -20,31 +21,32 @@
             <div class="row g-2">
                 <div class="mb-3 col-lg-6">
                     <label class="form-label" for="firstName">First Name</label>
-                    <input class="form-control" type="text" id="firstName" placeholder="Enter your first-name">
+                    <input class="form-control" type="text" id="firstName" placeholder="Enter your first-name" required>
                 </div>
 
                 <div class="mb-3 col-lg-6">
                     <label class="form-label" for="lastName">Last Name</label>
-                    <input class="form-control" type="text" id="lastName" placeholder="Enter your last-name">
+                    <input class="form-control" type="text" id="lastName" placeholder="Enter your last-name" required>
                 </div>
             </div>
 
             <div class="row g-2">
                 <div class="mb-3 col-lg-6">
                     <label class="form-label" for="email">Email</label>
-                    <input class="form-control" type="email" id="email" placeholder="Enter your email">
+                    <input class="form-control" type="email" id="email" placeholder="Enter your email" required>
                 </div>
 
                 <div class="mb-3 col-lg-6">
                     <label class="form-label" for="c">Password</label>
-                    <input class="form-control" type="password" id="password" placeholder="Enter your password">
+                    <input class="form-control" type="password" id="password" placeholder="Enter your password"
+                        required>
                 </div>
             </div>
 
             <div class="row g-2">
                 <div class="mb-3 mt-3 col-lg-6">
                     <label for="country">Select your Country</label>
-                    <select class="form-select" id="country">
+                    <select class="form-select" id="country" required>
                         <option value="" selected>select here</option>
                         <option value="India">India</option>
                         <option value="others">others</option>
@@ -65,7 +67,7 @@
             <button id="button" class="btn btn-warning mb-5">Submit</button>
         </form>
 
-        <div id="formData" class="d-none">
+        <div id="formData">
             <h2 class="display-4">Form Data</h2>
             <ul>
                 <li id="1"></li>
