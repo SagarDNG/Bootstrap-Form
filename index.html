@@ -8,22 +8,25 @@
     <title>Bootstrap forms</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
     <div class="container">
-        <h1 class="display-4">Bootstrap forms</h1>
+        <h1 class="display-3">Bootstrap form</h1>
 
-        <form action="/formResponse.html">
+        <p class="fs-3 text">Please fill the form, and get displayed your data below :)</p>
+
+        <form action="#nowhere">
             <div class="row g-2">
                 <div class="mb-3 col-lg-6">
-                    <label class="form-label" for="first-name">First Name</label>
-                    <input class="form-control" type="text" id="first-name" placeholder="Enter your first-name">
+                    <label class="form-label" for="firstName">First Name</label>
+                    <input class="form-control" type="text" id="firstName" placeholder="Enter your first-name">
                 </div>
 
                 <div class="mb-3 col-lg-6">
-                    <label class="form-label" for="last-name">Last Name</label>
-                    <input class="form-control" type="text" id="last-name" placeholder="Enter your last-name">
+                    <label class="form-label" for="lastName">Last Name</label>
+                    <input class="form-control" type="text" id="lastName" placeholder="Enter your last-name">
                 </div>
             </div>
 
@@ -35,7 +38,7 @@
 
                 <div class="mb-3 col-lg-6">
                     <label class="form-label" for="password">Password</label>
-                    <input class="form-control" type="password" id="password" placeholder="Enter your password">
+                    <input class="form-control" type="password" id="c" placeholder="Enter your password">
                 </div>
             </div>
 
@@ -44,7 +47,7 @@
                     <label for="country">Select your Country</label>
                     <select class="form-select" id="country">
                         <option value="" selected>select here</option>
-                        <option value="india">India</option>
+                        <option value="India">India</option>
                         <option value="others">others</option>
                     </select>
                 </div>
@@ -62,6 +65,16 @@
 
             <button id="button" class="btn btn-warning mb-5">Submit</button>
         </form>
+
+        <div id="formData" class="d-none">
+            <h2 class="display-4">Form Data</h2>
+            <ul>
+                <li id="1"></li>
+                <li id="2"></li>
+                <li id="3"></li>
+                <li id="4"></li>
+            </ul>
+        </div>
     </div>
 
     <script src="app.js"></script>
