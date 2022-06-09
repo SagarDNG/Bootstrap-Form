@@ -1,3 +1,7 @@
+.container {
+    box-sizing: border-box;
+}
+
 #formData {
     display: none;
 }
